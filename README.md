@@ -3,7 +3,7 @@
 This is my personal website.  
 Made it for fun, not for world domination (yet).
 
-👉 [Live Website](https://aditya-dalai.github.io/My-Portfolio/)  
+👉 [My Site](https://aditya-dalai.github.io/mysite/)  
 (*Click it... or don’t. I’m not your boss.*)
 
 ---

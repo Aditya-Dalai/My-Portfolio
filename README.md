@@ -1,4 +1,4 @@
-# 🔵 My Portfolio
+# 🔵 My Personal Website
 
 This is my personal website.  
 Made it for fun, not for world domination (yet).

@@ -66,7 +66,7 @@ body.blurred {
 
 h2.blue-text {
   color: #00aaff;
-  min-height: 2em; /* Keeps layout stable */
+  min-height: 2em;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -92,53 +92,110 @@ h2.blue-text {
 }
 
 
-/* 🔁 Mobile & Tablet Responsiveness */
+
+/* Mobile screen styles */
 @media (max-width: 768px) {
-  body {
-    padding: 0 16px;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4vh 2vw;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   h2.blue-text {
-    font-size: 1.2rem;
-    min-height: 1.8em;
+    font-size: 1.1rem;
   }
 
   .links {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
   }
 
   .icon {
     width: 20px;
     height: 20px;
-    margin: 0 8px;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2.blue-text {
-    font-size: 1rem;
-  }
-
-  .icon {
-    width: 18px;
-    height: 18px;
     margin: 0 6px;
   }
 
   .email {
     font-size: 0.9rem;
-    word-break: break-word;
   }
 }
+
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: white;
+  color: #000;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  z-index: 1001;
+  display: none;
+  animation: popupScale 0.4s ease forwards;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 480px) {
+  .popup {
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 88%;
+  }
+}
+
+@keyframes popupScale {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+#popup-action {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+#countdown {
+  color: #007bff;
+  font-weight: bold;
+}
+
+#close-btn {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+

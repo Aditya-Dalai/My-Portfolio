@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #19191c;
+  color: white;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+h1 .name {
+  color: #fff;
+}
+
+h2.blue-text {
+  color: #00aaff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00aaff;
+}
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: blur(10px);
+  z-index: 999;
+  animation: fadeOut 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+body.blurred {
+  filter: blur(10px);
+  transition: filter 0.6s ease;
+}
+
+h2.blue-text {
+  color: #00aaff;
+  min-height: 2em; /* Keeps layout stable */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin: 0 12px;
+  filter: brightness(0) saturate(100%) invert(46%) sepia(0%) saturate(0%) hue-rotate(184deg) brightness(94%) contrast(93%);
+  transition: filter 0.3s ease;
+}
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(92%) saturate(1941%) hue-rotate(179deg) brightness(96%) contrast(99%);
+}
+
+.email {
+  color: #737373;
+  text-decoration: none;
+}
+.email:hover {
+  text-decoration: none;
+}
+
+
+/* 🔁 Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2.blue-text {
+    font-size: 1.2rem;
+    min-height: 1.8em;
+  }
+
+  .links {
+    margin-top: 1.5rem;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2.blue-text {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 6px;
+  }
+
+  .email {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+}

@@ -4,13 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aditya Dalai</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-  <link rel="manifest" href="icons/site.webmanifest">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/site.webmanifest">
 </head>
 <body>
+    <div class="positioning-wrapper">
+      <div id="mobile-gif" class="gif-wrapper" style="display: none;">
+        <img id="troll-img" src="" alt="Troll Face" />
+      </div>
+    </div>
   <div id="preloader"></div>
   <main>
     <h1>Hi, I'm <span class="name">Aditya Dalai</span></h1>
@@ -26,15 +33,11 @@
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" class="icon" />
       </a>
     </div>
-
     <footer>
       <p><a href="mailto:adityadalai216@gmail.com" class="email">adityadalai216@gmail.com</a></p>
     </footer>
-
   </main>
-
-  <div id="popup-overlay"></div>
-  
+  <div id="popup-overlay"></div>  
   <div id="popup-hacked" class="popup">
     <p id="popup-text"></p>
     <div id="popup-action">
@@ -42,12 +45,10 @@
       <span id="close-btn" class="hidden">Close</span>
     </div>
   </div>
-
   <div id="popup-chill" class="popup">
     <p>Chill! I'm not that bad 😆</p>
   </div>
-
-
-  <script src="script.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/popupPrank.js"></script>
 </body>
 </html>

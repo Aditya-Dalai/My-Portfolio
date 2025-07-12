@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+  main {
+    padding: 4vh 2vw;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .links {
+    margin-top: 1.2rem;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+  }
+
+  .email {
+    font-size: 0.9rem;
+  }
+
+  .positioning-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  #mobile-gif {
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  #mobile-gif img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .popup {
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 88%;
+  }
+}

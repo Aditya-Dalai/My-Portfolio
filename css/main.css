@@ -23,14 +23,14 @@ h1 {
 h2 {
   margin-top: 20px;
   margin-bottom: 25px;
+  color: #00aaff;
+  min-height: 2em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h1 .name {
   color: #fff;
-}
-
-h2.blue-text {
-  color: #00aaff;
 }
 
 a {
@@ -64,18 +64,11 @@ body.blurred {
   transition: filter 0.6s ease;
 }
 
-h2.blue-text {
-  color: #00aaff;
-  min-height: 2em;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .icon {
   width: 22px;
   height: 22px;
   margin: 0 12px;
-  filter: brightness(0) saturate(100%) invert(46%) sepia(0%) saturate(0%) hue-rotate(184deg) brightness(94%) contrast(93%);
+  filter: brightness(0) saturate(100%) invert(46%) sepia(0%) hue-rotate(184deg) brightness(94%) contrast(93%);
   transition: filter 0.3s ease;
 }
 
@@ -87,45 +80,12 @@ h2.blue-text {
   color: #737373;
   text-decoration: none;
 }
+
 .email:hover {
   text-decoration: none;
 }
 
-
-
-/* Mobile screen styles */
-@media (max-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 4vh 2vw;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2.blue-text {
-    font-size: 1.1rem;
-  }
-
-  .links {
-    margin-top: 1.2rem;
-  }
-
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 6px;
-  }
-
-  .email {
-    font-size: 0.9rem;
-  }
-}
-
+/* Popups */
 #popup-overlay {
   position: fixed;
   top: 0;
@@ -155,15 +115,6 @@ h2.blue-text {
   display: none;
   animation: popupScale 0.4s ease forwards;
   font-size: 1rem;
-}
-
-
-@media (max-width: 480px) {
-  .popup {
-    padding: 1rem;
-    font-size: 0.9rem;
-    width: 88%;
-  }
 }
 
 @keyframes popupScale {
@@ -196,6 +147,3 @@ h2.blue-text {
 .hidden {
   display: none;
 }
-
-
-

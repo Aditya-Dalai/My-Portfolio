@@ -8,8 +8,8 @@ const closeBtn = document.getElementById("close-btn");
 
 const isMobile = window.innerWidth <= 768;
 const hackedMessage = isMobile
-  ? "Your Device Has Been Hacked<br>All your actions on this device are tracked by a hacker.<br>Immediate Action Is Required!"
-  : "Your Computer Has Been Hacked<br>All your actions on the device are tracked by a hacker.<br>Immediate Action Is Required!";
+  ? "Your Device Has Been Hacked<br><br>Immediate Action Is Required!"
+  : "Your Computer Has Been Hacked<br><br>Immediate Action Is Required!";
 
 function showPopup() {
   if (sessionStorage.getItem("popupShown")) return;

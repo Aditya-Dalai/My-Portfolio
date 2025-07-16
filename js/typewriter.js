@@ -1,6 +1,6 @@
 let pauseTypewriter = false;
 
-const slogans = ["Tech-Paglu", "Rookie Engineer", "Wannabe Developer"];
+const slogans = ["Tech Messiah", "Digital Native", "One Dev Army"];
 let i = 0, j = 0, isDeleting = false, currentText = "";
 const typewriter = document.getElementById("slogan");
 

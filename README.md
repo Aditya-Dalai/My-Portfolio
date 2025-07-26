@@ -10,7 +10,7 @@ Made it for fun, not for world domination (yet).
 
 Just HTML, CSS, and JavaScript.  
 No frameworks, no distractions, no "hire me" vibes.  
-If it breaks — well, that’s part of the experience ✨
+If it breaks... well, that’s part of the experience ✨
 
 ---
 
